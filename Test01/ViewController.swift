@@ -8,13 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController{
+weak var myLable:UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.yellow
+        
+        print(myLable.text!)
+        myLable.text = "hello iphone!!!"
+        
+        view.backgroundColor = UIColor.red
+        
     }
 
-
+    @IBAction func buttonPressed(_ sender: Any){ print("버튼이 눌러졌다! 하하하")
+    }
+    
 }
 
